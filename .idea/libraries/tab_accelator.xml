@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tab_accelator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/tab_accelator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
