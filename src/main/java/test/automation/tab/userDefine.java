@@ -37,8 +37,8 @@ public class userDefine extends glueCode{
 		con.writeStepInWordDocument("set new date: " +newDate);
 		htmlReport.writeStepInHtmlReport("set new date: " +newDate);
 		
-		/* if required predefine methods can be used to add sceen-shot into the word document and html report */
+		/* if required predefine methods can be used to add screen-shot into the word document and html report */
 		con.attachScreenShotInWordDocument();
 		htmlReport.attachScreenShotInHtmlReport();
-	}	
+	}
 }
