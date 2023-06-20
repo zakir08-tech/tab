@@ -10,9 +10,14 @@ import org.openqa.selenium.WebElement;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 	
 public class userDefine extends glueCode{
 	public static WebDriver xDriver;
+	public static common con;
+	public static String metaValue;
+	public static WebElement getStatus;
+	public static htmlReportCommon htmlReport;
 	
 	@SuppressWarnings("static-access")
 	public static void calcualteNewDateAndSet(String[] args) {

@@ -20,8 +20,8 @@ public class test {
 		
 		glueCode gCode = new glueCode();
 		common con = new common();
-		glueCode.implicitWaitTime =120;
-		glueCode.pageLoadTimeOut =120;
+		glueCode.implicitWaitTime ="120";
+		glueCode.pageLoadTimeOut ="120";
 		glueCode.getWebDriver("chrome");
 		
 		xDriver =gCode.boltDriver;
