@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.automation.bolt.common;
+//import com.automation.bolt.common;
 import com.automation.bolt.glueCode;
 
 public class test {
@@ -19,7 +19,6 @@ public class test {
 	public static void main(String[] args) throws IOException {
 		
 		glueCode gCode = new glueCode();
-		common con = new common();
 		glueCode.implicitWaitTime ="120";
 		glueCode.pageLoadTimeOut ="120";
 		glueCode.getWebDriver("chrome");
@@ -38,6 +37,6 @@ public class test {
 		String newDate = sdf.format(c.getTime());
 		
 		WebElement setNewDate =xDriver.findElement(By.xpath("//input[@id='endDate']"));
-		con.keySet(setNewDate, newDate);
+		gCode.keySet(setNewDate, newDate);
 	}
 }

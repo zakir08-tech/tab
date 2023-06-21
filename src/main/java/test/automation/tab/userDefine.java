@@ -1,21 +1,19 @@
 package test.automation.tab;
 
-import com.automation.bolt.common;
-import com.automation.bolt.glueCode;
-import com.automation.bolt.htmlReportCommon;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
+import com.automation.bolt.common;
+import com.automation.bolt.glueCode;
+import com.automation.bolt.htmlReportCommon;
 	
 public class userDefine extends glueCode{
 	public static WebDriver xDriver;
-	public static common con;
-	public static String metaValue;
 	public static WebElement getStatus;
 	public static htmlReportCommon htmlReport;
 	
@@ -36,7 +34,7 @@ public class userDefine extends glueCode{
 		String newDate = sdf.format(c.getTime());
 		
 		WebElement setNewDate =xDriver.findElement(By.xpath("//input[@id='endDate']"));
-		con.keySet(setNewDate, newDate);
+		gCode.keySet(setNewDate, newDate);
 		
 		/* if required predefine methods can be used to add step description into the word document and html report */
 		con.writeStepInWordDocument("set new date: " +newDate);
